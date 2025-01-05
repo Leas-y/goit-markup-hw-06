@@ -582,11 +582,6 @@ img {
   .section-portfolio {
     padding: 96px 0;
   }
-  .section-portfolio img {
-    width: 288px;
-    height: 280px;
-    object-fit: cover;
-  }
   .portfolio-list .list-item {
     margin-bottom: 48px;
   }
@@ -597,11 +592,6 @@ img {
 
 /* Tablet screen*/
 @media only screen and (min-width: 768px) {
-  .section-portfolio img {
-    width: 356px;
-    height: 300px;
-    object-fit: cover;
-  }
   .portfolio-list {
     display: flex;
     column-gap: 24px;
