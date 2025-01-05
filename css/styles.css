@@ -419,7 +419,8 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 72px;
   }
   .principles-list .list-item {
     width: calc((100% - 24px) / 2);
@@ -454,7 +455,7 @@ img {
   .section-principles .paragraph {
     font-weight: 400;
   }
-  .title-paragraph {
+  .section-principles .title-paragraph {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -502,7 +503,8 @@ img {
   .team-list {
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 64px;
     flex-wrap: wrap;
   }
   .team-list .team-member {
@@ -585,6 +587,12 @@ img {
     height: 280px;
     object-fit: cover;
   }
+  .portfolio-list .list-item {
+    margin-bottom: 48px;
+  }
+  .portfolio-list .list-item:nth-child(6) {
+    margin-bottom: 0;
+  }
 }
 
 /* Tablet screen*/
@@ -602,6 +610,9 @@ img {
   }
   .portfolio-list .list-item {
     width: calc((100% - 24px) / 2);
+  }
+  .portfolio-list .list-item {
+    margin-bottom: 0;
   }
 }
 
@@ -708,21 +719,28 @@ img {
 /* Tablet screen*/
 @media only screen and (min-width: 768px) {
   .bottom .container {
+    width: 584px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
     row-gap: 72px;
   }
+  .bottom-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
   .subscribe-part {
     display: inline;
-    margin-left: 76px;
   }
   .email-input {
     flex-direction: row;
   }
-  .bottom-text {
-    margin-left: 76px;
+  .bottom-media {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
 }
 
@@ -736,6 +754,7 @@ img {
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 0;
+    width: 100%;
   }
   .email-input {
     flex-direction: row;
